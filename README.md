@@ -1,2 +1,2 @@
 # engeto-projekt-3
-Můj Python projekt
+Elections scraper
