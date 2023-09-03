@@ -1,14 +1,14 @@
 # Engeto-projekt-3: Elections scraper
-Elections scraper
-Popis projektu:
+
+# Popis projektu:
 Tento skript je nástroj pro získání a ukládání dat o výsledcích voleb 2017 z vybraného územního celku na webu [Volby.cz](https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ). Skript získává informace o čísle obce, názvu obce, počtu voličů, počtu vydaných obálek, počtu platných hlasů a výsledcích jednotlivých stran včetně počtu hlasů pro každou stranu.
 
 # Instalace knihoven:
 V kódu jsou použity knihovny requests pro stahování webových stránek a knihovny BeautifulSoup pro parsování HTML obsahu. Tyto knihovny lze nainstalovat ze souboru requirements.txt pomocí následujících příkazů:
 
-> pip3 --version #overeni verze manazeru
-> pip3 install requests #instalace knihovny requests
-> pip install beautifulsoup4 #instalace knihovny beautifulsoup4
+pip3 --version #overeni verze manazeru\n
+pip3 install requests #instalace knihovny requests\n
+pip install beautifulsoup4 #instalace knihovny beautifulsoup4\n
 
 # Spuštění programu:
 Spustíte skript main.py a v příkazovém řádku zadáte dva povinné argumenty.
