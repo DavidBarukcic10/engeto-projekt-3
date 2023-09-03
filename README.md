@@ -1,29 +1,38 @@
 # Engeto-projekt-3: Elections scraper
 
 # Popis projektu:
-Tento skript je nástroj pro získání a ukládání dat o výsledcích voleb 2017 z vybraného územního celku na webu [Volby.cz](https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ). Skript získává informace o čísle obce, názvu obce, počtu voličů, počtu vydaných obálek, počtu platných hlasů a výsledcích jednotlivých stran včetně počtu hlasů pro každou stranu.
+Tento skript je nástroj pro získání a ukládání dat o výsledcích voleb 2017 z vybraného územního celku na webu [Volby.cz](https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ).<br>
+
+Skript získává základní informace pro konkrétní obce:<br>
+- číslo obce<br>
+- název obce<br>
+- počet voličů, počtu vydaných obálek<br>
+- počet platných hlasů<br>
+- výsledky jednotlivých stran včetně počtu hlasů pro každou stranu<br>
 
 # Instalace knihoven:
-V kódu jsou použity knihovny requests pro stahování webových stránek a knihovny BeautifulSoup pro parsování HTML obsahu. Tyto knihovny lze nainstalovat ze souboru requirements.txt pomocí následujících příkazů:
+V kódu jsou použity knihovny requests pro stahování webových stránek a knihovny BeautifulSoup pro parsování HTML obsahu.<br>
+Tyto knihovny lze nainstalovat ze souboru requirements.txt pomocí následujících příkazů:
 
-pip3 --version #overeni verze manazeru\n
-pip3 install requests #instalace knihovny requests\n
-pip install beautifulsoup4 #instalace knihovny beautifulsoup4\n
+pip3 --version #overeni verze manazeru <br>
+pip3 install requests #instalace knihovny requests<br>
+pip install beautifulsoup4 #instalace knihovny beautifulsoup4<br>
 
 # Spuštění programu:
 Spustíte skript main.py a v příkazovém řádku zadáte dva povinné argumenty.
 
-odkaz: webová adresa, kde jsou dostupná volební data
+odkaz: webová adresa, kde jsou dostupná volební data<br>
 jmeno souboru.csv: název výstupního CSV souboru, do něhož budou data uložena
 
 # Příklad spuštění:
-argument_1: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2102
-argument_2: Výsledky voleb Beroun.csv
+argument_1: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2102<br>
+argument_2: Výsledky voleb Beroun.csv<br>
+
 Vzorový příklad: python main.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2102" Výsledky voleb Beroun.csv
 
 # Průběh stahování:
-Zadejte dva argumenty: <odkaz> <jmeno souboru.csv>
-Data se zpracovávají...
+Zadejte dva argumenty: odkaz, jmeno souboru.csv<br>
+Data se zpracovávají...<br>
 Data byla uložena do souboru: Výsledky_voleb_Beroun.csv
 
 # Částečný výstup:
@@ -34,6 +43,6 @@ kód obce,název obce,voliči v seznamu,vydané obálky,platné hlasy,Občanská
 531081,Broumy,743,491,489,62,1,0,35,2,20,54,6,5,8,0,0,76,1,3,22,144,0,4,11,0,3,0,0,32,0
 
 # Kontakt:
-Autor: David Barukčić
-E-mail: d.barukcic@seznam.cz
+Autor: David Barukčić<br>
+E-mail: d.barukcic@seznam.cz<br>
 Discord: David Barukcic
