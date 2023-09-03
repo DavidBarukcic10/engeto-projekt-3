@@ -6,7 +6,8 @@ Tento skript je nástroj pro získání a ukládání dat o výsledcích voleb 2
 Skript získává základní informace pro konkrétní obce:<br>
 - číslo obce<br>
 - název obce<br>
-- počet voličů, počtu vydaných obálek<br>
+- počet voličů<br>
+- počet vydaných obálek<br>
 - počet platných hlasů<br>
 - výsledky jednotlivých stran včetně počtu hlasů pro každou stranu<br>
 
@@ -16,7 +17,7 @@ Tyto knihovny lze nainstalovat ze souboru requirements.txt pomocí následujíc�
 
 pip3 --version #overeni verze manazeru <br>
 pip3 install requests #instalace knihovny requests<br>
-pip install beautifulsoup4 #instalace knihovny beautifulsoup4<br>
+pip install beautifulsoup4 #instalace knihovny beautifulsoup4
 
 # Spuštění programu:
 Spustíte skript main.py a v příkazovém řádku zadáte dva povinné argumenty.
